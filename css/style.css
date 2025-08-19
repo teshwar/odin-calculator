@@ -1,0 +1,93 @@
+:root {
+  --calculator-border: #8aa624;
+  --calculator-background: #dbe4c9;
+  --calculator-text: #000000;
+  --calculator-dispay: #fffff0;
+}
+body {
+  /* width: 100vh;
+  height: 100vh; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Calculator CSS */
+.calculator {
+  width: 35%;
+  height: 75%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+
+  padding: 30px;
+  background-color: var(--calculator-background);
+  border: 25px solid var(--calculator-border);
+  border-radius: 5%;
+}
+
+/* Calculator Display */
+.display {
+  width: 100%;
+  height: 10%;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+
+  background-color: var(--calculator-dispay);
+  border: 2px solid black;
+  border-radius: 2%;
+}
+
+#display-text {
+  width: 100%;
+  height: 100%;
+  text-align: right;
+
+  color: red;
+  padding-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 0px;
+}
+
+/* Remove and Clear */
+.remove-buttons {
+  display: flex;
+
+  justify-content: space-evenly;
+}
+
+.remove-buttons button {
+  flex: 0.3 0 calc(30% - 10px); /* 3 per row minus the gap */
+  padding: 15px;
+  font-size: 18px;
+}
+
+/* Calculator other buttons*/
+.buttons-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1%;
+}
+
+.calc-btns {
+  flex: 4;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* allow wrapping */
+  gap: 10px; /* space between buttons (optional) */
+
+  width: 75%;
+  min-width: 200px; /* restrict width so only 3 fit per row */
+}
+
+.calc-btns button {
+  flex: 1 0 calc(25% - 10px); /* 3 per row minus the gap */
+  padding: 15px;
+  font-size: 18px;
+}
