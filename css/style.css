@@ -16,8 +16,10 @@ body {
 
 /* Calculator CSS */
 .calculator {
-  width: 35%;
-  height: 75%;
+  width: 100%; /* full width of parent, but capped by max-width */
+  max-width: 300px; /* this is the real cap */
+  min-width: 300px;
+  margin: 0 auto;
 
   display: flex;
   flex-direction: column;
