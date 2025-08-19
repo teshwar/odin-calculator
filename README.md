@@ -41,8 +41,8 @@ My approach to building this calculator:
 
 - [✅] Build the base HTML layout (buttons + screen).
 - [✅] Style with CSS for a neat calculator look.
-- [ ] Add JavaScript logic to handle button clicks.
-- [ ] Implement advanced features (e.g., decimals, keyboard support).
+- [✅ ] Add JavaScript logic to handle button clicks.
+- [✅] Implement advanced features (e.g., decimals, keyboard support).
 
 ---
 
